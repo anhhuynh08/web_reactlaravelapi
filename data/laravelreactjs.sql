@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th6 11, 2021 lúc 11:57 AM
+-- Thời gian đã tạo: Th6 11, 2021 lúc 04:37 PM
 -- Phiên bản máy phục vụ: 10.4.19-MariaDB
 -- Phiên bản PHP: 8.0.6
 
@@ -152,9 +152,12 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `brand_id`, `category_id`, `name_product`, `price_product`, `img_product`, `desc_product`, `created_at`, `updated_at`) VALUES
-(10, 5, 10, 'Dầu Gội TRESemmé Argan & Keratin Vào Nếp Suôn Mượt 640g Keratin Smooth Shampoo', 124000, 'C:\\fakepath\\hp-15s-a-600x600.jpg', 'không', '2021-06-11 02:13:57', '2021-06-11 02:13:57'),
 (11, 5, 10, 'Dầu Gội TRESemmé Gừng & Trà Xanh Detox Tóc Chắc Khỏe 640g Salon Detox Shampoo', 212000, 'C:\\fakepath\\ipad-pro-2021-129-inch-gray-600x600.jpg', 'Chai lớn', '2021-06-11 02:15:31', '2021-06-11 02:15:31'),
-(12, 5, 10, 'Xịt Tạo Kiểu Tóc TRESemmé Giữ Độ Phồng 155g Compressed Micro Mist', 124000, 'C:\\fakepath\\xiaomi-mi-11-lite-4g-blue-600x600.jpg', 'làm đẹp', '2021-06-11 02:16:41', '2021-06-11 02:16:41');
+(12, 5, 10, 'Xịt Tạo Kiểu Tóc TRESemmé Giữ Độ Phồng 155g Compressed Micro Mist', 124000, 'C:\\fakepath\\xiaomi-mi-11-lite-4g-blue-600x600.jpg', 'làm đẹp', '2021-06-11 02:16:41', '2021-06-11 02:16:41'),
+(13, 9, 8, 'NỮ Áo Sơ Mi Vải Linen Blend Cổ Trụ Tay Lửng 3/4', 399000, 'C:\\fakepath\\xiaomi-mi-11-lite-4g-blue-600x600.jpg', 'KHUYẾN MÃI TẠI TẤT CẢ CỬA HÀNG TỪ 11.06 - 17.06.2021', '2021-06-11 07:31:44', '2021-06-11 07:31:44'),
+(14, 9, 8, 'ULTRA LIGHT JACKET', 500000, 'C:\\fakepath\\ipad-pro-2021-129-inch-gray-600x600.jpg', '(SEERSUCKER)', '2021-06-11 07:33:09', '2021-06-11 07:33:09'),
+(15, 9, 8, 'NAM Áo Thun Nhiều Màu Cổ Tròn Ngắn Tay', 149000, 'C:\\fakepath\\xiaomi-mi-11-lite-4g-blue-600x600.jpg', 'màu xanh', '2021-06-11 07:34:12', '2021-06-11 07:34:12'),
+(16, 9, 8, 'SHORT SLEEVE CREW NECK OVERSIZED', 399000, 'C:\\fakepath\\iphone-12-pro-max-vang-new-600x600-1-600x600.jpg', 'T-SHIRT', '2021-06-11 07:34:59', '2021-06-11 07:34:59');
 
 -- --------------------------------------------------------
 
@@ -293,7 +296,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `students`

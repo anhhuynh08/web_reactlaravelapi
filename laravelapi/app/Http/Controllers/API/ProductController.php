@@ -17,7 +17,12 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $category = Category::all();
+        $product = Product::all();
+        return response()->json([
+            'status'=>200,
+            'product'=>$product,
+        ]);
     }
 
     /**
@@ -111,6 +116,11 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        $product->delete();
+        return response()->json([
+            'status'=> 200,
+            'message'=>'Product delete success',
+        ]);
     }
 }
